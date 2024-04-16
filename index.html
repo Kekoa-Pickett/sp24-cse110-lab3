@@ -2,64 +2,110 @@
 <html lang="en">
     <head>
         <title>Intro to HTML</title>
+        <meta charset='UTF-8'>
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/4/44/NBA_Finals_logo_%282022%29.svg/1200px-NBA_Finals_logo_%282022%29.svg.png" type="image/x-icon"> 
     </head>
     <body>
         <header>
-            <div>What do you want to know?</div> 
+            <div>2024 NBA Playoff Agenda</div> 
+            <div> 04/16/2024</div>
             <nav>
-                <li> 1</li>
-                <li> 2</li>
-            </nav>
-        </header>
-        <header>
-            <div>ALL RECIPE</div>
-            <nav>
-              <ul>
-                <li><a href="#ingredients">Ingredients</a></li>
-                <li><a href="#steps">Steps</a></li>
-                <li><a href="#subsribe">Subscribe</a></li>
+              <ul style="list-style:disc">
+                <li><a href="#Playoff format">Playoff format</a></li>
+                <li><a href="#Conferences">Conferences</a></li>
+                <li><a href="#Questions">Questions</a> </li>
               </ul>
             </nav>
-          </header>
-          <main>
-            <h1>Good Old Fashioned Pancakes</h1>
-            <img
-              src="https://images.unsplash.com/photo-1575853121743-60c24f0a7502?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGFuY2FrZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
-              alt="pancake"
-              width="250"
-            />
-            <h2 id="ingredients">Ingredients</h2>
-            <ol>
-              <li><input type="checkbox" /> 1 ½ cups all-purpose flour</li>
-              <li><input type="checkbox" /> 3 ½ teaspoons baking powder</li>
-              <li><input type="checkbox" /> 1 teaspoon salt</li>
-              <li><input type="checkbox" /> 1 tablespoon white sugar</li>
-              <li><input type="checkbox" /> 1 ¼ cups milk</li>
-              <li><input type="checkbox" /> 1 egg</li>
-            </ol>
-            <h2 id="steps">Steps</h2>
-            <h4>Step 1</h4>
-            <p>
-              In a large bowl, sift together the flour, baking powder, salt and sugar.
-              Make a well in the center and pour in the milk, egg and melted butter;
-              mix until smooth.
-            </p>
-            <h4>Step 2</h4>
-            <p>
-              Heat a lightly oiled griddle or frying pan over medium-high heat. Pour
-              or scoop the batter onto the griddle, using approximately 1/4 cup for
-              each pancake. Brown on both sides and serve hot.
-            </p>
-          </main>
-          <hr />
-          <footer>
-            <h6 id="subscribe">Subscribe</h6>
-            <form onsubmit="alert('Subscribed')">
-              <input type="text" placeholder="Enter Email Address" />
-              <button>Submit</button>
-            </form>
-            <br />
-            <div>&copy; dakota kelly at Allrecipe.com</div>
-          </footer>
-    </body>
+        </header>
+    <main>
+      <p> Attendes: Kyle, Janet, Mo, Shakira, Terri, Peter</p>
+      <h1> 2024 NBA Playoffs </h1>
+      <p><span style="color:green">The NBA playoffs are here! </span> 20 teams are competing to win the <i>Larry O'brien Championship Trophy</i>!
+      This page will discuss the format of the playoffs that was discussed in the meeting.</p>
+      
+      <section><h2 id="Conferences">Conferences</h2>
+        <p> There are 2 conferences, each with 15 teams. They play within their conference other more often and the playoffs are split by conference.</p>
+        <h3>Western Conference</h3>
+        The <em>better</em> conference statistically, the teams we talked about included the Lakers with LeBron James, the Nuggets with Nikola Jokic, and
+        the Suns with Kevin Durant.
+
+        <h3>Eastern Conference</h3>
+        The Celtics dominated the regular season with the best record in the NBA. We talked about players such as Jayson Tatum and Jrue Holiday 
+        on that team. We also went around and talked about who we think can win this side.
+      
+      </section>
+      <section>
+      <h2 id="Playoff format">Playoff format</h2>
+        These are the <strong>play-in</strong> teams, who are playing to get into the <strong>playoffs</strong>. Using the format on the image, 
+        these teams try to get the final two playoff spots in their respective confrence. <br>
+        <img src="https://cdn.nba.com/manage/2024/03/PlayInTournamentExmplainer-1-1568x882.jpg", width="500"> 
+        <br>
+        For more information, click <a href="https://www.nba.com/news/nba-play-in-tournament">here</a>:<br><br>
+
+        <details><summary><b> WEST </b></summary>            
+        <ol start="7", columns="2">
+          <li>Pelicans</li>         
+          <li> Lakers                       
+          <li> Kings</li>
+          <li> Warriors</li>
+        </ol>
+        </details>
+        <details><summary><b> EAST </b></summary>
+        <ol start="7", columns="2">
+          <li> <i>76ers</i></li>         
+          <li> Heat </li>                      
+          <li> Bulls</li>
+          <li> Hawks</li>
+        </ol>
+        </details>
+        <p> Then, in a best out of 7 series, teams continue to play in their conference until each conference has a winner.
+        Then, the winning team from each conference plays each other in the <strong>NBA Finals</strong>. The most recent champion was
+        the <i>Denver Nuggets</i>. </p>
+      </section>
+      Meeting overview video <video width="320" height="240" controls>
+        <source src="CSE110.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <audio controls> <source src="CSE110.mp4" type="audio/mp4"> WRONG THING</audio>
+      
+    </main>
+    <hr>
+    <footer>
+      <h6 id="Questions">Questions</h6>
+      <form>
+        <fieldset>
+        Contact info:<input type="text" placeholder="Enter phone # or email" /> <br>
+        Question:<br> <textarea>???</textarea> <br>
+        Are you watching the NBA playoffs: <input type="checkbox"> Yes <input type="checkbox"/> Only answer is Yes <br>
+
+        Favorite Team?<i>optional</i>
+        <label for="Heat">
+          <input id="Heat" type="radio" value="radioTeam"> Heat</label>
+        <label for="Lakers">
+          <input id="Lakers" type="radio" value="radioTeam"> Lakers</label>
+        <label for="Other">
+          <input id="Other" type="radio" value="radioTeam"> Other: <input list="Hi"/> 
+          <datalist id="Hi">
+            <option value = Nuggets></option>
+            <option value = Warriors></option>
+            <option value = Celtics></option>
+            <option value = Bucks></option>
+          </datalist></label>
+       <br>
+      Who is the GOAT:
+      <select>
+        <option value =""></option>
+        <option value="LeBron_James">Lebron James</option>
+        <option value ="Michael Jordan">Michael Jordan</option>
+        <option value ="Kobe Bryant">Kobe Bryant</option>
+        <option value ="None of the above">None of the above</option>
+      </select>
+      Date sent: <input type="date"/> <br>
+        <button>Send</button>
+        </fieldset>
+      </form>
+    </footer>
+
+ 
+  </body>
 </html>
