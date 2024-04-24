@@ -4,13 +4,26 @@ body {                                          /* This should cover almost ever
 .head{
     display: grid;
 }
+nav > ul{
+    font-style: italic;
+}
+video + audio{
+    font-size: small;
+}
 .title{
     grid-row: 1;
     grid-column: auto;
 }
+h3 ~ p{
+    line-height: 1.1em;
+}
 .date{
     grid-row: 1;
-    grid-column: -1;
+    grid-column: 6;
+}
+
+.date *:hover{
+    color: aquamarine;
 }
 .navlist {
     grid-row: 2;
@@ -20,12 +33,19 @@ body {                                          /* This should cover almost ever
     grid-row: 1;
     grid-column: 1;
 }
+form.box{
+    background-color: azure;
+}
+textarea:has(+p){
+    color: grey;
+}
 h1 {
     font-size: 4em;
-    /*font-family: "Jersey 20 Charted", sans-serif;*/
+    font-family: "Jersey 20 Charted", sans-serif;
     text-align: center;
     position: sticky;
     color: rgb(255, 215, 0);
+    
 }
 audio {
     background-color: lightyellow;
@@ -60,6 +80,23 @@ a:hover {
 details:active {
     color: dodgerblue;
 }
+*{
+    padding-bottom: 0pc;
+}
+a[type="radio"] {
+    color: aliceblue;
+}
+ol, li{
+    font-style: italic;
+}
+datalist option{
+    color: color-mix(in lch, plum, pink 40%);
+}
+
+#Questions {
+    color: purple;
+    font-size: 2em;
+}
 /*@property --box-color {
     syntax: "<color>";
     initial-value: rgb(255, 219, 154);
@@ -82,9 +119,6 @@ details:active {
     background-color: var(--box-color, rgb(255, 219, 154));
 }
 footer {
-    line-height: 4em;
+    line-height: 1.5em;
     color: hsl(1300,60,060);
-}
-button {
-    color: color-mix(in lch, plum, pink 40%);
 }
