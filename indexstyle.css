@@ -1,11 +1,16 @@
 body {                                          /* This should cover almost everything*/
-    color: color(from lightblue display-p3 .4 .3 .3); /*Problem */
+    color: color(from lightblue display-p3 .2 .3 .7); /*Problem */
 }
+/*.jersey-20-charted-regular {
+    font-family: "Jersey 20 Charted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}*/
+  
 h1 {
-    font: 'Jersey 10 Charted';
     font-size: 4em;
     text-align: center;
-    /*position: sticky;*/
+    position: sticky;
     color: rgb(255, 215, 0);
 }
 audio {
@@ -18,9 +23,9 @@ p {
     font: Verdana;
     font-size: 0.8rem;
     text-decoration: wavy;
-    /*position: static;*/
+    position: static;
 }
-/*img {
+img {
     display: inline-block;
     max-width: fit-content;
     max-height: fit-content;
@@ -30,7 +35,7 @@ source {
     height: 200px;
     width: 350px;
 }
-details {
+/*details {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -40,12 +45,12 @@ a:hover {
 }
 details:active {
     color: dodgerblue;
-}/*
-@property --box-color {
+}
+/*@property --box-color {
     syntax: "<color>";
     initial-value: rgb(255, 219, 154);
     inherits: false;
-}
+}*/
 .box {
     margin-top: -40pt;
     margin-right: 30pt;
@@ -60,10 +65,10 @@ details:active {
     border-width: 10pt;
     border-radius: 100px;
     --box-color: reds;
-    background-color: var(--box-color);
-} */
+    background-color: var(--box-color, rgb(255, 219, 154));
+}
 footer {
-    /*line-height: 2em;*/
+    line-height: 2em;
     color: hsl(080,90,050);
 }
 button {
