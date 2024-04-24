@@ -1,22 +1,22 @@
 body {                                          /* This should cover almost everything*/
-    background-color: lightyellow;
+    color: color(from lightblue display-p3 .4 .3 .3); /*Problem */
 }
 h1 {
     font: 'Jersey 10 Charted';
-    font-size: 0.9em;
+    font-size: 4em;
     text-align: center;
     /*position: sticky;*/
     color: rgb(255, 215, 0);
 }
 audio {
-    color: color(from lightblue display-p3 .4 .3 .3); /*Problem */
+    background-color: lightyellow;
 }
 b {
     color: #a30000;
 }
 p {
     font: Verdana;
-    font-size: 1.4rem;
+    font-size: 0.8rem;
     text-decoration: wavy;
     /*position: static;*/
 }
@@ -30,14 +30,14 @@ source {
     height: 200px;
     width: 350px;
 }
-a:hover {
-    font: bold;
-}
 details {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }*/
+a:hover {
+    font: bold;
+}
 details:active {
     color: dodgerblue;
 }/*
