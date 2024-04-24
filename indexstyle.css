@@ -7,9 +7,14 @@ body {                                          /* This should cover almost ever
 nav > ul{
     font-style: italic;
 }
-
+@media (orientation: portrait){
+    size-adjust:fullscreen{
+        background-color: lightcyan;
+    }
+}
 video + audio{
     font-size: small;
+    position: sticky;
 }
 .title{
     grid-row: 1;
@@ -42,9 +47,13 @@ textarea:has(+p){
 }
 h1 {
     font-size: 4em;
-    font-family: "Jersey 20 Charted", sans-serif;
+    font-family: "Jersey 10", sans-serif;
     text-align: center;
-    position: sticky;
+    border-color:#BFBFBF;
+    border: 10px;
+    border-style: dashed;
+    border-width: 10pt;
+    border-radius: 50px;
     color: rgb(255, 215, 0);
     
 }
@@ -111,15 +120,10 @@ datalist option{
     margin: 20px;  
     padding-top: 10px;      
     padding: 5px;       
-    border-color:#a30000;
-    border: 1pc;
-    border-style: dashed;
-    border-width: 10pt;
-    border-radius: 100px;
     --box-color: reds;
     background-color: var(--box-color, rgb(255, 219, 154));
 }
 footer {
     line-height: 1.5em;
-    color: hsl(300,60,60);
+    color: hsl(300,60,40);
 }
