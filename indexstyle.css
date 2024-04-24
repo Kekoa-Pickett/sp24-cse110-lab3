@@ -1,14 +1,28 @@
 body {                                          /* This should cover almost everything*/
-    color: color(from lightblue display-p3 .2 .3 .7); /*Problem */
+    color: color(from lightblue display-p3 .2 .3 .3); 
 }
-/*.jersey-20-charted-regular {
-    font-family: "Jersey 20 Charted", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}*/
-  
+.head{
+    display: grid;
+}
+.title{
+    grid-row: 1;
+    grid-column: auto;
+}
+.date{
+    grid-row: 1;
+    grid-column: -1;
+}
+.navlist {
+    grid-row: 2;
+    grid-column: 1;
+}
+.attendance {
+    grid-row: 1;
+    grid-column: 1;
+}
 h1 {
     font-size: 4em;
+    /*font-family: "Jersey 20 Charted", sans-serif;*/
     text-align: center;
     position: sticky;
     color: rgb(255, 215, 0);
@@ -21,7 +35,7 @@ b {
 }
 p {
     font: Verdana;
-    font-size: 0.8rem;
+    font-size: 0.9em;
     text-decoration: wavy;
     position: static;
 }
@@ -35,11 +49,11 @@ source {
     height: 200px;
     width: 350px;
 }
-/*details {
+details {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-}*/
+}
 a:hover {
     font: bold;
 }
@@ -68,8 +82,8 @@ details:active {
     background-color: var(--box-color, rgb(255, 219, 154));
 }
 footer {
-    line-height: 2em;
-    color: hsl(080,90,050);
+    line-height: 4em;
+    color: hsl(1300,60,060);
 }
 button {
     color: color-mix(in lch, plum, pink 40%);
